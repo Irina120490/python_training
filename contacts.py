@@ -28,7 +28,8 @@ class Contacts(unittest.TestCase):
 
     def add_new_contact(self, wd, firstname="Jonn", middlename="Smith", nickname="Jo", company="Google",
                         address="Baker st.", home="1234567", mobile="1234565", work="1234545", fax="1234758",
-                        email="Jonn@mail.ru", email2="Jo@mail.ru"):
+                        email="Jonn@mail.ru", email2="Jo@mail.ru", bday="1", bmonth="January", byear="1999",
+                        address2="asdfgh", phone2="123456", notes="jkl"):
         wd.find_element_by_link_text("add new").click()
         wd.find_element_by_name("theform").click()
         wd.find_element_by_name("firstname").click()
@@ -59,23 +60,23 @@ class Contacts(unittest.TestCase):
         wd.find_element_by_name("email2").clear()
         wd.find_element_by_name("email2").send_keys(email2)
         wd.find_element_by_name("bday").click()
-        Select(wd.find_element_by_name("bday")).select_by_visible_text("1")
+        Select(wd.find_element_by_name("bday")).select_by_visible_text(bday)
         wd.find_element_by_xpath("//option[@value='1']").click()
         wd.find_element_by_name("bmonth").click()
-        Select(wd.find_element_by_name("bmonth")).select_by_visible_text("January")
+        Select(wd.find_element_by_name("bmonth")).select_by_visible_text(bmonth)
         wd.find_element_by_xpath("//option[@value='January']").click()
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
-        wd.find_element_by_name("byear").send_keys("1999")
+        wd.find_element_by_name("byear").send_keys(byear)
         wd.find_element_by_name("address2").click()
         wd.find_element_by_name("address2").clear()
-        wd.find_element_by_name("address2").send_keys("asdfgh")
+        wd.find_element_by_name("address2").send_keys(address2)
         wd.find_element_by_name("phone2").click()
         wd.find_element_by_name("phone2").clear()
-        wd.find_element_by_name("phone2").send_keys("123456")
+        wd.find_element_by_name("phone2").send_keys(phone2)
         wd.find_element_by_name("notes").click()
         wd.find_element_by_name("notes").clear()
-        wd.find_element_by_name("notes").send_keys("jkl")
+        wd.find_element_by_name("notes").send_keys(notes)
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
     def login(self, wd, username, password):
