@@ -11,6 +11,17 @@ class Contacts(unittest.TestCase):
     def setUp(self):
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(30)
+
+    def test_contacts_two(self):
+        wd = self.wd
+        self.open_home_page(wd)
+        self.login(wd, username="admin", password="secret")
+        self.add_new_contact(wd, firstname="Anna", middlename="Morozova", nickname="Ann", company="Yandex",
+                             address="Rubin st.", home="122222", mobile="123333", work="124444",
+                             fax="124563", email="Anna@mail.ru", email2="An@mail.ru", bday="12", bmonth="March",
+                             byear="1993", address2="kjgekg", phone2="654321", notes="rtyui")
+        self.return_to_the_home_page(wd)
+        self.logout(wd)
     
     def test_contacts(self):
         wd = self.wd
