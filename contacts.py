@@ -16,8 +16,10 @@ class Contacts(unittest.TestCase):
         wd = self.wd
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.add_new_contact(wd, "Jonn", "Smith", "Jo", "Google", "Baker st.", "1234567", "1234565", "1234545",
-                             "1234758", "Jonn@mail.ru", "Jo@mail.ru", "1", "January", "1999", "asdfgh", "123456", "jkl")
+        self.add_new_contact(wd, firstname="Jonn", middlename="Smith", nickname="Jo", company="Google",
+                             address="Baker st.", home="1234567", mobile="1234565", work="1234545",
+                             fax="1234758", email="Jonn@mail.ru", email2="Jo@mail.ru", bday="1", bmonth="January",
+                             byear="1999", address2="asdfgh", phone2="123456", notes="jkl")
         self.return_to_the_home_page(wd)
         self.logout(wd)
 
