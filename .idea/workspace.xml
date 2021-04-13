@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="238439b3-a067-4a96-acea-1d6d3289c6b3" name="Default Changelist" comment="contacts_1.15">
+    <list default="true" id="238439b3-a067-4a96-acea-1d6d3289c6b3" name="Default Changelist" comment="contacts_1.16 Автотест для создания нового контакта">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +81,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in test_add_group.py" />
       <item itemvalue="Python tests.Unittests in test_add_group.py" />
       <item itemvalue="Python tests.pytest for contacts.Contacts" />
+      <item itemvalue="Python tests.pytest in test_add_group.py" />
     </list>
     <recent_temporary>
       <list>
@@ -224,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618004252615</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="contacts_1.16 Автотест для создания нового контакта">
+      <created>1618006627309</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1618006627309</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +254,7 @@
     <MESSAGE value="contacts_1.13" />
     <MESSAGE value="contacts_1.14" />
     <MESSAGE value="contacts_1.15" />
-    <option name="LAST_COMMIT_MESSAGE" value="contacts_1.15" />
+    <MESSAGE value="contacts_1.16 Автотест для создания нового контакта" />
+    <option name="LAST_COMMIT_MESSAGE" value="contacts_1.16 Автотест для создания нового контакта" />
   </component>
 </project>
