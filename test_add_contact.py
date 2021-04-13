@@ -6,14 +6,14 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, re
-from contactsgroup import Contactsgroup
+from contact import Contact
 
-class Contacts(unittest.TestCase):
+class TestAddContact(unittest.TestCase):
     def setUp(self):
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(30)
 
-    def test_contacts_two(self):
+    def test_add_contact_two(self):
         wd = self.wd
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
@@ -25,7 +25,7 @@ class Contacts(unittest.TestCase):
         self.return_to_the_home_page(wd)
         self.logout(wd)
     
-    def test_contacts(self):
+    def test_add_contact(self):
         wd = self.wd
         self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
