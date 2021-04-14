@@ -14,14 +14,14 @@ class TestAddGroup(unittest.TestCase):
         self.app = Application()
 
     def test_add_empty_group(self):
-        self.login( username="admin", password="secret")
-        self.create_group(Group (name="", header="", footer=""))
-        self.logout()
+        self.app.login( username="admin", password="secret")
+        self.app.create_group(Group (name="", header="", footer=""))
+        self.app.logout()
     
     def test_add_group(self):
-        self.login(username="admin", password="secret")
-        self.create_group(Group (name="dfgdfg", header="dfgdfg", footer="dfgdfgdfg"))
-        self.logout()
+        self.app.login(username="admin", password="secret")
+        self.app.create_group(Group (name="dfgdfg", header="dfgdfg", footer="dfgdfgdfg"))
+        self.app.logout()
 
     def is_element_present(self, how, what):
         try: self.wd.find_element(by=how, value=what)
@@ -34,7 +34,7 @@ class TestAddGroup(unittest.TestCase):
         return True
 
     def tearDown(self):
-        self.wd.quit()
+        self.app.destroy()
 
 if __name__ == "__main__":
     unittest.main()
