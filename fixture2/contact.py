@@ -1,21 +1,11 @@
-from selenium import webdriver
 
-class ApplicationContact:
+class Contact:
 
-    def __init__(self):
-        self.wd = webdriver.Firefox()
-        self.wd.implicitly_wait(30)
-
-    def logout(self):
-        wd = self.wd
-        wd.find_element_by_link_text("Logout").click()
-
-    def return_to_the_home_page(self):
-        wd = self.wd
-        wd.find_element_by_link_text("home").click()
+    def __init__(self, app):
+        self.app = app
 
     def add_new_contact(self, contact):
-        wd = self.wd
+        wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
         wd.find_element_by_name("theform").click()
         wd.find_element_by_name("firstname").click()
@@ -45,12 +35,7 @@ class ApplicationContact:
         wd.find_element_by_name("email").send_keys(contact.email)
         wd.find_element_by_name("email2").clear()
         wd.find_element_by_name("email2").send_keys(contact.email2)
-        wd.find_element_by_name("bday").click()
-        wd.find_element_by_name("bday").select_by_visible_text(contact.bday)
-        wd.find_element_by_xpath("//option[@value='1']").click()
-        wd.find_element_by_name("bmonth").click()
-        Select(wd.find_element_by_name("bmonth")).select_by_visible_text(contact.bmonth)
-        wd.find_element_by_xpath("//option[@value='January']").click()
+
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys(contact.byear)
@@ -65,18 +50,6 @@ class ApplicationContact:
         wd.find_element_by_name("notes").send_keys(contact.notes)
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
-    def login(self, username, password):
-        wd = self.wd
-        self.open_home_page()
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys(username)
-        wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys(password)
-        wd.find_element_by_xpath("//input[@value='Login']").click()
-
-    def open_home_page(self):
-        wd = self.wd
-        wd.get("http://localhost/addressbook/")
-
-    def destroy(self):
-        self.wd.quit()
+    def return_to_the_home_page(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text("home").click()
