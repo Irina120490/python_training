@@ -50,6 +50,12 @@ class Contact:
         wd.find_element_by_name("notes").send_keys(contact.notes)
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
+    def delete_first_contact(self):
+        wd = self.app.wd
+        wd.find_element_by_name("selected[]").click()
+        wd.find_element_by_xpath("(//input[@value='Delete'])").click()
+
+
     def return_to_the_home_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("home").click()
