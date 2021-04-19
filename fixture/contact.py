@@ -53,7 +53,7 @@ class Contact:
     def delete_first_contact(self):
         wd = self.app.wd
         wd.find_element_by_name("selected[]").click()
-        wd.find_element_by_xpath("(//input[@value='Delete'])").click()
+        wd.find_element_by_xpath("(//input[@value='Delete'])").click().click()
 
 
     def return_to_the_home_page(self):
