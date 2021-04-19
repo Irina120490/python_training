@@ -54,12 +54,11 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_name("selected[]").click()
         wd.find_element_by_xpath("(//input[@value='Delete'])").click()
-        wd.assertRegexpMatches(close_alert_and_get_its_text(), r"^Delete 1 addresses[\s\S]$")
         wd.switch_to_alert().accept()
 
     def modify_contact(self, contact):
         wd = self.app.wd
-        wd.find_element_by_id("26").click()
+        wd.find_element_by_name("selected[]").click()
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
