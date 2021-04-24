@@ -6,8 +6,8 @@ class ContactHelper:
 
     def create(self, contact):
         wd = self.app.wd
-        wd.find_element_by_link_text("add_new").click()
-        self.fill_contact_form(contact, wd)
+        wd.find_element_by_link_text("add new").click()
+        self.fill_contact_form(contact)
         wd.find_element_by_name("submit").click()
         self.return_to_the_home_page()
 
@@ -20,23 +20,21 @@ class ContactHelper:
 
     def fill_contact_form(self, contact):
         wd = self.app.wd
-        self.change_field_value("contact_firstname", contact.firstname)
-        self.change_field_value("contact_middlename", contact.middlename)
-        self.change_field_value("contact_nickname", contact.nickname)
-        self.change_field_value("contact_company", contact.company)
-        self.change_field_value("contact_address", contact.address)
-        self.change_field_value("contact_home", contact.home)
-        self.change_field_value("contact_mobile", contact.mobile)
-        self.change_field_value("contact_work", contact.work)
-        self.change_field_value("contact_fax", contact.fax)
-        self.change_field_value("contact_email", contact.email)
-        self.change_field_value("contact_email2", contact.email2)
-        self.change_field_value("contact_bday", contact.bday)
-        self.change_field_value("contact_bmonth", contact.bmonth)
-        self.change_field_value("contact_byear", contact.byear)
-        self.change_field_value("contact_address2", contact.address2)
-        self.change_field_value("contact_phone2", contact.phone2)
-        self.change_field_value("contact_notes", contact.notes)
+        self.change_field_value("firstname", contact.firstname)
+        self.change_field_value("middlename", contact.middlename)
+        self.change_field_value("nickname", contact.nickname)
+        self.change_field_value("company", contact.company)
+        self.change_field_value("address", contact.address)
+        self.change_field_value("home", contact.home)
+        self.change_field_value("mobile", contact.mobile)
+        self.change_field_value("work", contact.work)
+        self.change_field_value("fax", contact.fax)
+        self.change_field_value("email", contact.email)
+        self.change_field_value("email2", contact.email2)
+        self.change_field_value("byear", contact.byear)
+        self.change_field_value("address2", contact.address2)
+        self.change_field_value("phone2", contact.phone2)
+        self.change_field_value("notes", contact.notes)
 
     def select_first_contact(self):
         wd = self.app.wd
