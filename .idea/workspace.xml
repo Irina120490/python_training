@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="238439b3-a067-4a96-acea-1d6d3289c6b3" name="Default Changelist" comment="python_training_3.6(2)">
+    <list default="true" id="238439b3-a067-4a96-acea-1d6d3289c6b3" name="Default Changelist" comment="python_training_4.8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_modify_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_modify_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
       <recent name="C:\A\python_training\fixture2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_modify_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_modify_contact.py">
     <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,11 +152,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_modify_group.py" />
-        <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest in test_modify_contact.py" />
         <item itemvalue="Python tests.pytest in test_del_contact.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
+        <item itemvalue="Python tests.pytest in test_modify_group.py" />
+        <item itemvalue="Python tests.pytest in test_del_group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -173,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617285902765</updated>
-    </task>
-    <task id="LOCAL-00009" summary="contacts_1.12">
-      <created>1617990332969</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1617990332969</updated>
     </task>
     <task id="LOCAL-00010" summary="contacts_1.13">
       <created>1617990755854</created>
@@ -517,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619517387084</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="python_training_4.8">
+      <created>1619558026744</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1619558026744</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -533,7 +531,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="python_training_2.3(2) Созданы пакеты для разных зон ответственности" />
     <MESSAGE value="python_training_2.3(3) Выделен класс для работы с группами (Дз)" />
     <MESSAGE value="python_training_2.1 Для контактов" />
     <MESSAGE value="python_training_2.2 Для контактов" />
@@ -558,6 +555,7 @@
     <MESSAGE value="python_training_3.5(2)" />
     <MESSAGE value="python_training_3.6" />
     <MESSAGE value="python_training_3.6(2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="python_training_3.6(2)" />
+    <MESSAGE value="python_training_4.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="python_training_4.8" />
   </component>
 </project>
