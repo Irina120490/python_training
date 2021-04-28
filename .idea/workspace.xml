@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="238439b3-a067-4a96-acea-1d6d3289c6b3" name="Default Changelist" comment="python_training_4.8">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="238439b3-a067-4a96-acea-1d6d3289c6b3" name="Default Changelist" comment="python_training_4.8(2)">
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617285902765</updated>
-    </task>
-    <task id="LOCAL-00010" summary="contacts_1.13">
-      <created>1617990755854</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1617990755854</updated>
     </task>
     <task id="LOCAL-00011" summary="contacts_1.14">
       <created>1617993811454</created>
@@ -515,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619558026744</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="python_training_4.8(2)">
+      <created>1619607865137</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1619607865137</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -531,7 +528,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="python_training_2.3(3) Выделен класс для работы с группами (Дз)" />
     <MESSAGE value="python_training_2.1 Для контактов" />
     <MESSAGE value="python_training_2.2 Для контактов" />
     <MESSAGE value="python_training_2.3 Для контактов" />
@@ -556,6 +552,7 @@
     <MESSAGE value="python_training_3.6" />
     <MESSAGE value="python_training_3.6(2)" />
     <MESSAGE value="python_training_4.8" />
-    <option name="LAST_COMMIT_MESSAGE" value="python_training_4.8" />
+    <MESSAGE value="python_training_4.8(2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="python_training_4.8(2)" />
   </component>
 </project>
