@@ -14,7 +14,7 @@ def test_add_contact_two(app):
     old_contacts.append(contact)
     assert old_contacts == new_contacts
 
-#def test_add_contact(app):
+def test_add_contact(app):
     old_contacts = app.contact.get_contact_list()
     app.contact.create(Contact(firstname="Jonn", lastname="Smith", nickname="Jo", company="Google",
                                      address="Baker st.", home="1234567", mobile="1234565", work="1234545",
