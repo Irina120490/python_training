@@ -62,9 +62,12 @@ class ContactHelper:
         wd.switch_to_alert().accept()
         self.contact_cache = None
 
-    def modify_first_contact(self, new_contact_data):
+    def modify_first_contact(self):
+        self.modify_contact_by_index(0)
+
+    def modify_contact_by_index(self, index, new_contact_data):
         wd = self.app.wd
-        self.select_first_contact()
+        self.select_contact_by_index(index)
         # open modification form
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
         # fill contact form
